@@ -1,0 +1,112 @@
+$(document).ready(function(){
+    $("#show-submenu").click(function(){
+        console.log(1);
+        if($(this).hasClass("fa-chevron-down")){
+            $(this).removeClass("fa-chevron-down");
+            $(this).addClass("fa-chevron-up");
+        }
+        else{
+            $(this).addClass("fa-chevron-down");
+            $(this).removeClass("fa-chevron-up");
+        }
+        $(this).parent().find('.sub-menu').toggle();
+    });
+    $('.carousel-product').owlCarousel({
+        margin:0,
+        padding: 100,
+        nav:false,
+        autoplay:true,
+        autoplayTimeout:4000,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+    $('.carousel-detail').owlCarousel({
+        loop:true,
+        margin:0,
+        padding: 100,
+        nav:false,
+        autoplay:true,
+        autoplayTimeout:4000,
+        dots: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+    $('.carousel-top').owlCarousel({
+        loop:true,
+        margin:0,
+        padding: 100,
+        nav:false,
+        autoplay:true,
+        autoplayTimeout:3000,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+    $('.carousel-category').owlCarousel({
+        loop:true,
+        margin:0,
+        padding: 100,
+        nav:false,
+        autoplay:true,
+        autoplayTimeout:4000,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:6
+            }
+        }
+    });
+    $('.carousel-new').owlCarousel({
+        margin:0,
+        padding: 100,
+        nav:false,
+        autoplay:true,
+        autoplayTimeout:4000,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+});
