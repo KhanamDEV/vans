@@ -1,0 +1,124 @@
+*{margin: 0; padding: 0;}
+*,*::before, *::after{box-sizing: border-box;}
+a{color: black;}
+a:hover{text-decoration: none; color: var(--color-orange);}
+ul{list-style: none;}
+h4, h3, h5{font-family: var(--font-bold);}
+p{margin-bottom: 0;}
+@font-face{
+    font-family: "SF-UI-Bold";
+    src: url('./font/sf-ui-display-bold.otf') format("truetype");
+}
+
+@font-face{
+    font-family: "SF-UI-Regular";
+    src: url('./font/SF-UI-Display-Regular.otf') format("truetype");
+}
+
+:root{
+    --color-orange: black;
+    --color-gray: #aaaaaa;
+    --font-regular: "SF-UI-Regular";
+    --font-bold: "SF-UI-Bold";
+    --font-size-normal: 16px;
+    --font-size-big: 26px
+}
+
+/* css-extra */
+span.brand{color: var(--color-orange);}
+.group-select-location .form-group:last-child{display: flex; flex-direction: row; align-items: flex-end; justify-content: space-between}
+.group-select-location .form-group:last-child button, .group-select-location .form-group:last-child a{width: 48%; height: 40px}
+/* css-layout */
+body{font-size: var(--font-size-normal); font-family: var(--font-regular); background-color: #f6f7f9;}
+body .padding{padding: 50px 0}
+body .padding-child{padding: 30px}
+body main#main-admin{padding-top: 50px}
+body header#wrap-header-admin{ z-index: 9999}
+body .container{border-radius: 10px;}
+/* css-title */
+.title{margin-bottom: 25px;}
+.title h3 img{margin-right: 15px;}
+.title h3, .title-hanbook-new h3{font-family: var(--font-bold); font-size: 20px; text-transform: uppercase; margin-bottom: 0;}
+.title.load-more, .title-hanbook-new{display: flex; align-items: center; justify-content: space-between;}
+.title.load-more h3{margin: 0}
+.title-hanbook-new{padding: 15px 15px 25px 15px; border-bottom: 2px solid var(--color-orange)}
+.title-orange{padding: 15px; background-color: var(--color-orange); font-family: var(--font-bold); font-size: 16px; text-align: center; color: white; text-transform: uppercase;}
+.title-overview-area{text-align: center; margin-bottom: 30px; font-size: 24px; color: var(--color-orange);}
+.title-tour {font-size: 20px; text-transform: uppercase; margin-bottom: 20px;}
+.title-page{text-align: center; margin-bottom: 40px; color: var(--color-orange); position: relative; z-index: 11}
+/* css-button */
+a.btn.small, button.btn.small{max-width: 200px;}
+button{height: 40px; width: 100%;}
+button.bg-orange, a.bg-orange{background-color: var(--color-orange); color:var(--white)}
+button.bg-orange:hover{background-color: #7d7575;}
+a.transparent{display: block; border: 2px solid white; background-color: transparent;}
+a.transparent:hover{background-color: var(--color-orange);}
+
+/* css-form */
+form.wrap-form input{height: 40px;}
+form.wrap-form button{margin-top: 35px}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{background-color: var(--color-orange);}
+form .form-row .img{margin-top: 15px;}
+form .form-row .img img{width: 100%;}
+.form-tour button{max-width: 30%; display: block; margin: 30px auto 0}
+/* css-modal */
+.modal-header, .modal-footer{border: none}
+.modal-header{padding: 40px 0}
+.modal-body, .modal-footer{padding: 0 30px 30px 30px}
+.modal-header h5{font-family: var(--font-bold); margin: 0 auto; font-size: var(--font-size-big);}
+.modal-header {position: relative}
+.modal-header button.close{position: absolute; top: 15px; right: 15px; padding: 0; margin: 0; width: 15px}
+
+/* css-pagination */
+ul.pagination{margin-top: 30px}
+ul.pagination span.current{border-radius: 50% !important; border: none;  height: 35px; width: 35px;text-align: center; margin: 0 5px;  display: flex; align-items: center; background-color: var(--color-orange); color: white; justify-content: center}
+ul.pagination span.disabled{display: flex; align-items: center; justify-content: center; height: 35px; width: 35px}
+ul.pagination a.page-link{border-radius: 50% !important; border: none; background-color: transparent; height: 35px; width: 35px;text-align: center; margin: 0 5px; color: black;}
+ul.pagination a.page-link.active{background-color: var(--color-orange); color: white;}
+
+/* css-table */
+table.table{margin-top: 40px; margin-bottom: 0;}
+table.table th{border-top: none;}
+table.table td .group-button{display: flex; justify-content: space-between;}
+table.table td .group-button a, table.table td .group-button button{width: 48%; color: white; display: block;}
+.table td{vertical-align: unset;}
+
+/* header */
+header#wrap-header{background-color: var(--white); padding: 20px 0; }
+header#wrap-header .container{display: flex; justify-content: space-between; align-items: center;}
+header#wrap-header-admin{padding: 20px 0; background-color: white; }
+header#wrap-header-admin p{text-align: center; color: var(--color-orange); font-family: var(--font-bold); font-size: 22px;}
+
+nav#menu-admin{background-color: var(--color-orange); }
+nav#menu-admin ul{display: flex; justify-content: center}
+nav#menu-admin ul li:first-child a{background-color: white;}
+nav#menu-admin ul li a{display: block;  background-color: var(--color-orange); color: white; font-size: 18px;}
+nav#menu-admin ul li a i{margin-right: 10px;}
+
+nav#menu-admin ul li:not(:first-child) a{padding: 20px}
+nav#menu-admin ul li:not(:first-child) a:hover{background-color: #264219}
+/*nav#menu-admin ul li:not(:first-child) a.active{border-bottom: 1px solid blue}*/
+/* main-login */
+section#wrap-login-admin{margin-top: 45px}
+section#wrap-login-admin .main-login{width: 800px; margin: 0 auto; padding: 40px 35px; border-radius: 10px; }
+section#wrap-login-admin h3.title-login-admin{text-align: center; margin-bottom: 40px;}
+section#wrap-login-admin button{margin-top: 40px}
+
+/* footer-admin-login */
+footer#wrap-footer-admin-login{padding: 15px 0; background-color: var(--color-orange); }
+footer#wrap-footer-admin-login.position{ position: absolute; width: 100%; left: 0; bottom: 0;}
+footer#wrap-footer-admin-login p{ color: white; text-align: center; font-size: 18px;}
+footer#wrap-footer-admin-login.position{position: absolute; width: 100%; bottom: 0; left: 0}
+
+a.new-button{position: absolute; top: 0; right: 0}
+.loading{position: fixed; top: 0; left: 0;  width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, .6); z-index: 9999}
+.loading svg{height: max-content; width: max-content}
+.ajax-loading{display: none}
+
+label.error{color: #dc3545; font-size: 80%}
+#modalMessage .modal-body{padding: 40px; text-align: center}
+#modalMessage .modal-footer a{width: 100%}
+/*#wrap-header-admin .logo{position: absolute; top: 0; left: 0; height: 100%; display: flex; align-items: center; width: 217px; justify-content: center}*/
+@media (min-width: 576px){
+    .modal-dialog{margin: 9.75rem auto}
+}
